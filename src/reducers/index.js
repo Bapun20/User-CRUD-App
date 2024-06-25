@@ -1,10 +1,11 @@
 // src/reducers/index.js
-import { combineReducers } from "redux";
-// Import other reducers here
-import userReducer from "./userReducer";
+import { combineReducers } from 'redux';
+import userReducer from './userReducer';
+import editUserReducer from './editUserReducer';
 
 const rootReducer = combineReducers({
-  userState: userReducer, // Use your actual reducers here
+    users: userReducer,
+    editUser: editUserReducer
 });
 
 export default rootReducer;
